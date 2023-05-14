@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parallax responsive landing page</title>
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- ICONS BOXICONS -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+
+        
+    </head>
+    <body>
+
+        <style>
+            .active{
+                animation: changeclr 1s forwards;
+            }
+
+            @keyframes changeclr{
+                0%{
+                    background-color: transparent;
+                }
+                100%{
+                    background-color: white;
+                }
+            }
+
+        </style>
+        <!-- ===== HEADER =====-->
+        <header class="l-header" id="head">
+            <nav class="nav bd-grid">
+                <a href="#" class="nav__logo"><img src="./assets/img/palantos_technologies_with_logo (2).png" width="130" height="80"></a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu-alt-right'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#"  class="nav__link">HOME</a></li>
+                        <li class="nav__item"><a href="#about"  class="nav__link">ABOUT</a></li>
+                        <li class="nav__item"><a href="#strategies"  class="nav__link">STRATEGIES</a></li>
+                        <li class="nav__item"><a href="#management"  class="nav__link">MANAGEMENT</a></li>
+                        <li class="nav__item"><a href="#contact"  class="nav__link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- ===== HOME =====-->
+            <div class="home">
+                <!--<div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
+                <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-7"></div>
+                <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-6"></div>
+                <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>-->
+                <div id="particles-js">
+                    <!--<h1 class="parallax home__title" data-rellax-speed="-6">Mountain</h1>
+                    <span class="parallax home__subtitle" data-rellax-speed="-5">Mountain explore</span>-->
+                    <h2  data-reveal class="parallax home__title" style="text-align: center; margin: auto; margin-top: 45vh; color: white; font-weight: 200;  font-weight: 100; letter-spacing: 2px;" data-reveal>
+                        PALANTOS <span style="display: inline-block; color: red; font-weight: 600;">|
+                        </span> TECHNOLOGIES
+                    </h2>
+                    
+                    <div class="home__scroll">
+                        <a href="#section"><i class='bx bx-mouse'></i></a>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- ===== ABOUT =====
+            <section id="about"></section>-->
+            <section class="container" id="about" data-reveal >
+                <div>
+                    <h1
+                        style="text-align: center; margin: auto; margin-top: 100px; color: rgb(24, 80, 185);   font-weight: 100; letter-spacing: 2px;"
+                        data-reveal>
+                        ABOUT
+                    </h1>
+                    <p class="section__text" style="text-align: left; margin-top: 50px; margin: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laboriosam. Esse ipsum
+                        culpa laboriosam, totam hic quidem recusandae eos, numquam iusto aliquid expedita est sapiente quaerat inventore
+                        voluptatem corporis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus provident molestias ratione nisi ducimus debitis quae, beatae voluptas soluta molestiae doloribus quas odio reiciendis atque labore blanditiis.
+                         Aliquam, non!Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laboriosam. Esse ipsum
+                        culpa laboriosam, totam hic quidem recusandae eos, numquam iusto aliquid expedita est sapiente quaerat inventore
+                        voluptatem corporis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus provident
+                        molestias ratione nisi ducimus debitis quae, beatae voluptas soluta molestiae doloribus quas odio reiciendis atque
+                        labore blanditiis. Aliquam, non!Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laboriosam. Esse ipsum
+                        culpa laboriosam, totam hic quidem recusandae eos, numquam iusto aliquid expedita est sapiente quaerat inventore
+                        voluptatem corporis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus provident
+                        molestias ratione nisi ducimus debitis quae, beatae voluptas soluta molestiae doloribus quas odio reiciendis atque
+                        labore blanditiis. Aliquam, non!</p>
+                </div>
+            </section>
+
+            <!-- ===== STRATEGIES =====
+            <section id="strategies"></section>-->
+            <br>
+            <section class="container" id="strategies" data-reveal="center" >
+                    <h1 style="text-align: center; margin: auto; margin-top: 100px; color:rgb(60,108,164);  font-weight: 100; letter-spacing: 2px;"
+                        data-reveal>
+                        STRATEGIES
+                    </h1>
+                    <br>
+                    <br>
+                    <style>
+                        /* Float four columns side by side */
+                        .column {
+                            float: left;
+                            width: 50%;
+                            padding: 0 10px;
+                        }
+                    
+                        /* Remove extra left and right margins, due to padding */
+                        .row {
+                            margin: 0 -5px;
+                        }
+                    
+                        /* Clear floats after the columns */
+                        .row:after {
+                            content: "";
+                            display: table;
+                            clear: both;
+                        }
+                    
+                        /* Responsive columns */
+                        @media screen and (max-width: 600px) {
+                            .column {
+                                width: 100%;
+                                display: block;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    
+                        /* Style the counter cards */
+                        .card {
+                            box-shadow: 0.1rem 0.1rem 0.3rem -0.03rem rgb(24, 80, 185);
+                            text-align: center;
+                            background-color: rgb(255, 255, 255);
+                            position: relative;
+                        }
+                    
+                        .centered {
+                            position: absolute;
+                            top: 50%;
+                            left: 30%;
+                            transform: translate(-50%, -50%);
+                            color: white;
+                        }
+
+                         .centeredd {
+                            position: absolute;
+                            top: 60%;
+                            left: 30%;
+                            transform: translate(-50%, -50%);
+                            color: white;
+                        }
+
+                        .readmore{
+                            color: white;
+                        }
+                    
+                        .middle {
+                            transition: .5s ease;
+                            opacity: 0;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            text-align: center;
+                        }
+                    
+                        .card:hover .img-card  {
+                            animation: bg-change 0.2s forwards;
+                            
+                        }
+
+                        .card:hover .arrow-1{
+                            animation: a1 0.5s forwards;
+                            
+                        }
+                                     
+                        .card:hover .centered {
+                            animation: taadaa 0.2s forwards;
+                        }
+
+                        .card:hover .readmore revealed{
+                             animation: taada 0.2s forwards;
+                         
+                        }
+                    
+                        @keyframes taadaa {
+                            0% {
+                                color: white;
+                            }
+                    
+                            100% {
+                                color: rgb(24, 80, 185);
+                            }
+                        }
+
+                        @keyframes taada {
+                            0% {
+                                color: white;
+                            }
+                    
+                            100% {
+                                color: rgb(24, 80, 185);
+                            }
+                        }
+
+                        @keyframes bg-change {
+                            0% {
+                                opacity: 1;
+                            }
+                    
+                            100% {
+                                opacity: 0.3;
+                            }
+                        }
+
+                        .enlarge{
+                            animation: a1 0.5s forwards;
+                        }
+
+                        /* Here's the SVG Code */
+                        .arrow-1 {
+                        width:100px;
+                        height:30px;
+                        display: flex;
+                        }
+
+                        .arrow-1:before {
+                        content: "";
+                        background: currentColor;
+                        width:15px;
+                        clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
+                        animation: a1 1.5s forwards;
+                        }
+
+                        .arrow-1{
+                            animation: a2 0.5s forwards;
+                        }
+
+                        .arrow-1:hover{
+                            animation: a1 0.5s forwards;
+                        }
+                        @keyframes a1 {
+                        0%{
+                            width: 100px;
+                        }
+                        100%{
+                            width: 130px;
+                        }
+                        }
+
+                         @keyframes a2 {
+                        0%{
+                            width: 130px;
+                        }
+                        100%{
+                            width: 100px;
+                        }
+                        }
+
+                    </style>
+
+                    <!--<script defer>
+                        const arrow = document.getElementsByClassName('arrow-1')
+                        const card = document.getElementsByClassName('card')
+                        
+                        card.addEventListener('mouseover', () => arrow.classList.add('enlarge'))
+                        cube.addEventListener('mouseleave', () => arrow.classList.remove('enlarge'))
+
+                        <div class="popup-link">
+                            <a href="#popup1">Click Me (Style 1)</a>
+                            <a href="#popup2">Click Me (Style 2)</a>
+                            <a href="#popup3">Click Me (Style 3)</a>
+                            <a href="#popup4">Click Me (Style 4)</a>
+                            <a href="#popup5">Click Me (Style 5)</a>
+                            <a href="#popup6">Click Me (Style 6)</a>
+                            <a href="#popup7">Click Me (Style 7)</a>
+                        </div>
+
+                        <div id="popup1" class="popup-container">
+                            <div class="popup-content">
+                                <a href="#" class="close">&times;</a>
+                                <h3>Popup 1</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                    scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </script>-->
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <div class="img-card" data-reveal="center" style="max-height: 700px; max-width: auto; margin: auto ;">
+                                        <img src="./assets/img/Untitled-11.jpg" loading="lazy" alt="Riachard Ryan" class="img-cover">
+                                    </div>
+                                    <div class="centered">
+                                        <h1  style="text-align: left;" data-reveal>
+                                            Arachova, 2023
+                                        </h1>
+                                        <a href="#popup1" ><h2 class="readmore" style="text-align: left; margin-top: 50px; font-weight: 600;" data-reveal>
+                                            Read more
+                                        </h2></a>
+                                        <div class="arrow-1"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    
+                            <div class="column">
+                                <div class="card">
+                                    <div class="img-card" data-reveal="center" style="max-height: 700px; max-width: auto; margin: auto ;">
+                                        <img src="./assets/img/Untitled-11.jpg" loading="lazy" alt="Riachard Ryan" class="img-cover">
+                                    </div>
+                                    <div class="centered">
+                                        <h1 style="text-align: left;" data-reveal>
+                                            Arachova, 2023
+                                        </h1>
+                                        <a href="#popup2">
+                                            <h2 class="readmore" style="text-align: left; margin-top: 50px; font-weight: 600;" data-reveal>
+                                                Read more
+                                            </h2>
+                                        </a>
+                                        <div class="arrow-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <div class="img-card" data-reveal="center" style="max-height: 700px; max-width: auto; margin: auto ;">
+                                        <img src="./assets/img/Untitled-11.jpg" loading="lazy" alt="Riachard Ryan" class="img-cover">
+                                    </div>
+                                    <div class="centered">
+                                        <h1 style="text-align: left;" data-reveal>
+                                            Arachova, 2023
+                                        </h1>
+                                        <a href="#popup3">
+                                            <h2 class="readmore" style="text-align: left; margin-top: 50px; font-weight: 600;" data-reveal>
+                                                Read more
+                                            </h2>
+                                        </a>
+                                        <div class="arrow-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="column">
+                                <div class="card">
+                                    <div class="img-card" data-reveal="center" style="max-height: 700px; max-width: auto; margin: auto ;">
+                                        <img src="./assets/img/Untitled-11.jpg" loading="lazy" alt="Riachard Ryan" class="img-cover">
+                                    </div>
+                                    <div class="centered">
+                                        <h1 style="text-align: left;" data-reveal>
+                                            Arachova, 2023
+                                        </h1>
+                                        <a href="#popup4">
+                                            <h2 class="readmore" style="text-align: left; margin-top: 50px; font-weight: 600;" data-reveal>
+                                                Read more
+                                            </h2>
+                                        </a>
+                                        <div class="arrow-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <div class="img-card" data-reveal="center" style="max-height: 700px; max-width: auto; margin: auto ;">
+                                        <img src="./assets/img/Untitled-11.jpg" loading="lazy" alt="Riachard Ryan" class="img-cover">
+                                    </div>
+                                    <div class="centered">
+                                        <h1 style="text-align: left;" data-reveal>
+                                            Arachova, 2023
+                                        </h1>
+                                        <a href="#popup5">
+                                            <h2 class="readmore" style="text-align: left; margin-top: 50px; font-weight: 600;" data-reveal>
+                                                Read more
+                                            </h2>
+                                        </a>
+                                        <div class="arrow-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="column">
+                                <div class="card">
+                                    <div class="img-card" data-reveal="center" style="max-height: 700px; max-width: auto; margin: auto ;">
+                                        <img src="./assets/img/Untitled-11.jpg" loading="lazy" alt="Riachard Ryan" class="img-cover">
+                                    </div>
+                                    <div class="centered">
+                                        <h1 style="text-align: left;" data-reveal>
+                                            Arachova, 2023
+                                        </h1>
+                                        <a href="#popup6">
+                                            <h2 class="readmore" style="text-align: left; margin-top: 50px; font-weight: 600;" data-reveal>
+                                                Read more
+                                            </h2>
+                                        </a>
+                                        <div class="arrow-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+            </section>
+
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Here i am</h2>
+                    <a class="close" href="#strategies#popup1">&times;</a>
+                    <div class="content">
+                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup2" class="overlay">
+                <div class="popup">
+                    <h2>Here i am</h2>
+                    <a class="close" href="#strategies#popup2">&times;</a>
+                    <div class="content">
+                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup3" class="overlay">
+                <div class="popup">
+                    <h2>Here i am</h2>
+                    <a class="close" href="#strategies#popup3">&times;</a>
+                    <div class="content">
+                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup4" class="overlay">
+                <div class="popup">
+                    <h2>Here i am</h2>
+                    <a class="close" href="#strategies#popup4">&times;</a>
+                    <div class="content">
+                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup5" class="overlay">
+                <div class="popup">
+                    <h2>Here i am</h2>
+                    <a class="close" href="#strategies#popup5">&times;</a>
+                    <div class="content">
+                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup6" class="overlay">
+                <div class="popup">
+                    <h2>Here i am</h2>
+                    <a class="close" href="#strategies#popup6">&times;</a>
+                    <div class="content">
+                        Thank to pop me out of that button, but now i'm done so you can close this window.
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+
+            <!-- ===== LEADERSHIP TEAM-MANAGEMENT =====-->
+            <style>
+                .cardd {
+                background-color: #fff;
+                box-shadow: 0.1rem 0.1rem 0.3rem -0.03rem rgba(0, 26, 255, 0.45);
+                padding-bottom: 1rem;
+                height: 700px;
+                }
+
+                .cardd > :last-child {
+                margin-bottom: 0;
+                }
+
+                .cardd h3 {
+                margin-top: 1rem;
+                font-size: 1.25rem;
+                color: #222831;
+                }
+
+                .carddimg{
+                border-radius: 0.5rem 0.5rem 0 0;
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+                /*aspect-ratio: 4/3;*/
+                }
+
+
+                .cardd-wrapper {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+                grid-gap: 1.5rem;
+                }
+
+            </style>
+            <br>
+            <br>
+            <br>
+            <section class="container"  id="management" data-reveal="center" >
+                <h1 style="text-align: center; margin: auto; margin-top: 100px; color: rgb(60,108,164);  font-weight: 100; letter-spacing: 2px;"
+                    data-reveal>
+                    LEADERSHIP TEAM
+                </h1>
+                <br>
+                <br>
+                <ul class="cardd-wrapper">
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                </ul>
+            </section>
+            <br>
+            <br>
+            <br>
+
+            <!-- ===== INVESTMENT TEAM =====-->
+            <section class="container" id="investment" data-reveal>
+                <h1 style="text-align: center; margin: auto; margin-top: 100px; color: rgb(60,108,164);  font-weight: 100; letter-spacing: 2px;"
+                    data-reveal>
+                    INVESTMENT TEAM
+                </h1>
+                <br>
+                <br>
+                <ul class="cardd-wrapper">
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg"src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                </ul>
+            </section>
+            <br>
+            <br>
+
+            <!-- ===== MARKETING TEAM =====-->
+            <section class="container" id="marketing" data-reveal="center">
+                <h1 style="text-align: center; margin: auto; margin-top: 100px; color: rgb(60,108,164);  font-weight: 100; letter-spacing: 2px;"
+                    data-reveal>
+                    MARKETING TEAM
+                </h1>
+                <br>
+                <br>
+                <ul class="cardd-wrapper">
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                    <li class="cardd">
+                        <img class="carddimg" src="https://picsum.photos/600/400" alt="">
+                        <h3>A super wonderful headline</h3>
+                        <p>Lorem ipsum sit dolor amit</p>
+                    </li>
+                </ul>
+            </section>
+            <br>
+            <br>
+            <br>
+
+        <section class="footer" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                        </div>
+                        <p style="font-weight: 500; margin-top: 50px; color: #fff;">© PALANTOS TECHNOLOGIES 2022-2024
+                            All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        </main>
+
+        <!-- RELLAX JS -->
+        <script src="assets/js/rellax.min.js"></script>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+        <!-- SCROLL REVEAL -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- MAIN JS -->
+        <script src="assets/js/main.js"></script>
+        
+
+        <!-- PARTICLES -->
+        <script>
+            /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+            particlesJS.load('particles-js', 'assets/particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
+        <!--<script defer>
+            el = document.getElementsByClassName('nav__link')
+            console.log(el)
+
+            $('.nav__link').on('click', function () {
+                $('.active-link').removeClass('active-link');
+                $(this).addClass('active-link');
+            });
+        </script>-->
+    </body>
+</html>
