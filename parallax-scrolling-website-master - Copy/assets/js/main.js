@@ -93,11 +93,17 @@ function scrollActive() {
             sectionId = current.getAttribute('id')
             console.log(sectionId)
 
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        try {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            } else {
+                document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            }
+            
+        } catch (error) {
+            console.log(error)
         }
+        
     })
 }
 window.addEventListener('scroll', scrollActive)
